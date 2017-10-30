@@ -22,13 +22,13 @@ int fastq_2_fasta_pipe() {
             exit(0);
         }
         buffer[0] = '>';
-        cout << "\033[1;31m" << buffer << "\033[0m" << endl;
+        cout  << buffer <<  endl;
         count++;
 
         getline(cin, buffer);
 
 
-        cout << "\x1B[34m"<<buffer << endl;
+        cout <<buffer << endl;
 
         getline(cin, buffer);
 
